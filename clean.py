@@ -26,10 +26,10 @@ def clean_data(input1, input2, output):
     # Save the cleaned data to the output file
     cleaned_df.to_csv(output, index=False)
 
-    # # Print the shape of the output file
-    # output_df = pd.read_csv(output)
-    # num_rows, num_columns = output_df.shape
-    # print("Shape of the output file: ", num_rows, "rows", num_columns, "columns")
+    # Print the shape of the output file
+    output_df = pd.read_csv(output)
+    num_rows, num_columns = output_df.shape
+    print("Shape of the output file: ", num_rows, "rows", num_columns, "columns")
 
 if __name__ == "__main__":
     # Specify the file paths
